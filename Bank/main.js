@@ -88,3 +88,56 @@ const allClient = [
 
 // const x = depositMoneyClient(allClient,5,300);
 // console.log(x);
+
+// block client//
+// a . 
+//     function clientadd(array) {
+//         array.push({id: 7,fullName : "Almaz" , email: "ddddddd@gmail.com", phone: "777777" , balance: 1300 ,});
+//         return array
+//     }
+// console.log(clientadd(allClient));
+
+// b . 
+// function withdrawMoney(id, array,amount) {
+//     for (let i=0; i<array.length;i++){
+//         if(array[i].balance> 0 && id== array[i].id){
+//             array[i].balance-=amount 
+//             return  array
+//         }
+//     }
+// }
+
+// var x = withdrawMoney(4,allClient,200);
+// console.log(x);
+
+// c . 
+
+// Deposit money
+
+// function depositMoney(id,array,amount) {
+//     for (let i=0; i<array.length;i++){
+//         if(id == array[i].id){
+//             array[i].balance+=amount;
+//             return array
+//         }
+//     };
+    
+// }
+
+// var x= depositMoney(4,allClient,200)
+
+// d
+// Get all clients that have more than 400$/
+
+function clientsWithOver(array) {
+    for(let i=0; i<array.length;i++){
+        if (array[i].balance > 400){
+            console.log(array[i].id);
+        }
+    }
+}
+
+
+
+
+
